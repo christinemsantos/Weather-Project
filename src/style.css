@@ -4,6 +4,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+footer {
+  text-align: center;
+  color: rgba(10, 67, 248, 0.6);
+}
+a {
+  color: rgba(10, 67, 248, 0.8);
+}
 .container {
   background-color: aliceblue;
   max-width: 90%;
@@ -14,4 +21,21 @@ body {
   margin-bottom: 100px;
   padding: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.search-form-input {
+  background-color: white;
+  width: 70%;
+  padding: 20px;
+  border-color: aqua;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.search-form-button {
+  background-color: aqua;
+  font-size: 20px;
+  width: 20%;
+  padding: 20px;
+  border-color: white;
+  border-radius: 10px;
+  margin-left: 40px;
 }
