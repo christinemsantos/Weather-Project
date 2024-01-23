@@ -1,7 +1,7 @@
 function displayWeather(response) {
-  console.log(response);
+  currentTemp = document.querySelector("#current-temp");
+  currentTemp.innerHTML = Math.round(response.data.temperature.current);
 }
-
 function searchCity(city) {
   let apiKey = "af51t24f57b6fo0d3407bf1a846aaa92";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
@@ -18,3 +18,5 @@ function handleSearchSubmit(event) {
 
 let searchFormElement = document.querySelector("#search-section");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+searchCity("New York");

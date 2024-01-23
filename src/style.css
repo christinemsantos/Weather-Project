@@ -6,7 +6,8 @@ body {
 }
 h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 55px;
+  margin-top: 0;
 }
 footer {
   text-align: center;
@@ -61,8 +62,8 @@ a {
   min-width: 300px;
   text-align: center;
   color: rgba(10, 67, 248, 0.8);
-  font-size: 25px;
-  line-height: 2;
+  font-size: 18px;
+  line-height: 1.5;
 }
 .time {
   font-weight: bolder;
@@ -82,13 +83,19 @@ a {
 .weather-bold {
   font-weight: bolder;
 }
+.temp-container {
+  display: flex;
+  margin-left: 45px;
+}
 .current-temp {
   min-width: 100px;
   display: flex;
   margin-top: 80px;
-  font-size: 120px;
+  font-size: 100px;
+  font-weight: 200;
 }
 .degrees-icon {
+  margin-top: 80px;
   font-size: 30px;
   margin-bottom: 15px;
 }
