@@ -25,23 +25,25 @@
         <div class="weather-data">
           <div class="date-time-city">
             <p class="date-time">
-              Sunday January 21, 2024
+              <span id="day">Sunday January 21, 2024</span>
               <br />
-              <span class="time">2:51pm</span>
+              <span id="time-hours">2</span>
+              <span id="time-minutes">:51</span>
+              <span id="am-pm">pm</span>
             </p>
-            <h1 id="city">New York</h1>
+            <h1 id="city"></h1>
           </div>
           <div class="temp-container">
-            <div class="current-temp" id="current-temp">12</div>
+            <div class="current-temp" id="current-temp"></div>
             <span class="degrees-icon">°F</span>
           </div>
           <div class="weather-details">
             <div class="weather-emoji">☁️</div>
-            Scattered Clouds
+            <span id="conditions"></span>
             <br />
-            Humidity: <span class="weather-bold">66%</span>
+            Humidity: <span class="weather-bold" id="humidity-value"></span>
             <br />
-            Wind: <span class="weather-bold"> 3.13.km/h</span>
+            Wind: <span class="weather-bold" id="windspeed-value"></span>
           </div>
         </div>
       </main>
