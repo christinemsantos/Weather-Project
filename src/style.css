@@ -6,6 +6,7 @@ body {
 }
 h1 {
   font-size: 50px;
+  margin-top: 60px;
 }
 footer {
   text-align: center;
@@ -13,9 +14,6 @@ footer {
 }
 a {
   color: rgba(10, 67, 248, 0.8);
-}
-span {
-  font-weight: bolder;
 }
 .container {
   background-color: aliceblue;
@@ -52,21 +50,31 @@ span {
 .date-time {
   text-align: center;
   color: rgba(10, 67, 248, 0.8);
-  font-size: 18px;
-  line-height: 2.5;
+  font-size: 25px;
+  line-height: 2;
+}
+.time {
+  font-weight: bolder;
 }
 .weather-emoji {
-  font-size: 50px;
+  font-size: 80px;
+  text-align: center;
 }
 .weather-details {
-  margin-top: 20px;
-  text-align: center;
+  margin-top: 30px;
   color: rgba(10, 67, 248, 0.8);
   font-size: 18px;
   line-height: 1.6;
 }
+.weather-bold {
+  font-weight: bolder;
+}
 .current-temp {
-  margin-top: 35px;
-  font-size: 50px;
-  font-weight: bold;
+  display: flex;
+  margin-top: 80px;
+  font-size: 120px;
+}
+.degrees-icon {
+  font-size: 20px;
+  margin-bottom: 15px;
 }
