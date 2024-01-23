@@ -4,12 +4,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+h1 {
+  font-size: 50px;
+}
 footer {
   text-align: center;
   color: rgba(10, 67, 248, 0.6);
 }
 a {
   color: rgba(10, 67, 248, 0.8);
+}
+span {
+  font-weight: bolder;
 }
 .container {
   background-color: aliceblue;
@@ -38,4 +44,29 @@ a {
   border-color: white;
   border-radius: 10px;
   margin-left: 40px;
+}
+.weather-data {
+  display: flex;
+  justify-content: space-around;
+}
+.date-time {
+  text-align: center;
+  color: rgba(10, 67, 248, 0.8);
+  font-size: 18px;
+  line-height: 2.5;
+}
+.weather-emoji {
+  font-size: 50px;
+}
+.weather-details {
+  margin-top: 20px;
+  text-align: center;
+  color: rgba(10, 67, 248, 0.8);
+  font-size: 18px;
+  line-height: 1.6;
+}
+.current-temp {
+  margin-top: 35px;
+  font-size: 50px;
+  font-weight: bold;
 }
