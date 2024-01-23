@@ -31,6 +31,7 @@ function displayWeather(response) {
   let currentTemp = document.querySelector("#current-temp");
   let currentHumid = document.querySelector("#humidity-value");
   let currentWind = document.querySelector("#windspeed-value");
+  let currentIcon = document.querySelector("#weather-icon");
   let currentConditions = document.querySelector("#conditions");
 
   console.log(response.data);
@@ -45,9 +46,9 @@ function displayWeather(response) {
   }
 
   if (date.getMinutes() > 9) {
-    currentTimeMinutes.innerHTML = `:${date.getMinutes()}`;
+    currentTimeMinutes.innerHTML = `: ${date.getMinutes()}`;
   } else {
-    currentTimeMinutes.innerHTML = `:0${date.getMinutes()}`;
+    currentTimeMinutes.innerHTML = `: 0${date.getMinutes()}`;
   }
 
   if (date.getHours() < 12) {
@@ -60,6 +61,7 @@ function displayWeather(response) {
   currentTemp.innerHTML = Math.round(response.data.temperature.current);
   currentHumid.innerHTML = `${Math.round(response.data.temperature.humidity)}%`;
   currentWind.innerHTML = `${response.data.wind.speed}mph`;
+  currentIcon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon"/>`;
   currentConditions.innerHTML = response.data.condition.description;
 }
 function searchCity(city) {

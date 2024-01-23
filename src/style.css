@@ -66,9 +66,10 @@ a {
   line-height: 1.5;
   font-weight: bolder;
 }
-.weather-emoji {
-  font-size: 80px;
-  text-align: center;
+.weather-icon {
+  margin-left: 25px;
+  width: 100px;
+  height: 100px;
 }
 .weather-details {
   text-align: center;
