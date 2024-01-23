@@ -5,8 +5,8 @@ body {
   background-position: center;
 }
 h1 {
+  text-align: center;
   font-size: 50px;
-  margin-top: 60px;
 }
 footer {
   text-align: center;
@@ -33,21 +33,32 @@ a {
   border-color: aqua;
   border-radius: 10px;
   font-size: 20px;
+  margin-top: 20px;
 }
 .search-form-button {
+  min-width: 120px;
   background-color: aqua;
   font-size: 20px;
   width: 20%;
   padding: 20px;
   border-color: white;
   border-radius: 10px;
+  margin-top: 20px;
   margin-left: 40px;
 }
 .weather-data {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+.date-time-city {
+  margin-top: 20px;
+  background: white;
+  max-height: 250px;
+  border-radius: 10px;
 }
 .date-time {
+  min-width: 300px;
   text-align: center;
   color: rgba(10, 67, 248, 0.8);
   font-size: 25px;
@@ -61,6 +72,8 @@ a {
   text-align: center;
 }
 .weather-details {
+  text-align: center;
+  min-width: 200px;
   margin-top: 30px;
   color: rgba(10, 67, 248, 0.8);
   font-size: 18px;
@@ -70,11 +83,12 @@ a {
   font-weight: bolder;
 }
 .current-temp {
+  min-width: 100px;
   display: flex;
   margin-top: 80px;
   font-size: 120px;
 }
 .degrees-icon {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 15px;
 }
